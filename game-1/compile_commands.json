@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/jschmold/Projects/game-1",
+  "command": "/usr/bin/c++    -O2 -DNDEBUG   -std=c++14 -o CMakeFiles/game.dir/src/index.cpp.o -c /home/jschmold/Projects/game-1/src/index.cpp",
+  "file": "/home/jschmold/Projects/game-1/src/index.cpp"
+},
+{
+  "directory": "/home/jschmold/Projects/game-1",
+  "command": "/usr/bin/c++    -O2 -DNDEBUG   -std=c++14 -o CMakeFiles/game.dir/src/window.cpp.o -c /home/jschmold/Projects/game-1/src/window.cpp",
+  "file": "/home/jschmold/Projects/game-1/src/window.cpp"
+}
+]

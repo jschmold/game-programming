@@ -1,0 +1,7 @@
+The purpose of this experiment is to:
+
+Familiarize myself with CMake and GLFW
+Familiarize myself with the basics of OpenGL
+To get a box to be able to move about the screen in 2d
+
+This project is considered a success if all three of these things are accomplished
