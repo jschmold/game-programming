@@ -87,6 +87,7 @@ int main(int argc, char* argv[])
         ground.setPosition(groundPos.x, groundPos.y);
         ground.setFillColor(Color::Red);
 
+        clientView.setCenter(ply->getPosition());
         window.clear(Color::Transparent);
         window.setView(clientView);
         window.draw(ground);
