@@ -23,10 +23,13 @@ set (CMAKE_CXX_EXTENSIONS OFF)
 # Modules go here
 
 # The game executable
-# add_executable(game src/index.cpp src/player.cpp)
+add_subdirectory(src/entities)
 
+add_executable(game src/index.cpp )
+
+target_link_libraries(game entities)
 target_link_libraries(game sfml-system sfml-window sfml-graphics)
 target_link_libraries(game GLU)
 target_link_libraries(game GL)
 target_link_libraries(game GLEW)
-target_link_libraries(game Box2D)
+target_link_libraries(game box2d)
