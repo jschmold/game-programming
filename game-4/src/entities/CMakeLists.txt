@@ -6,6 +6,8 @@ add_library(entities STATIC
     player.cpp
     world.h
     world.cpp
+    platform.h
+    platform.cpp
     physics-entity.h
     world-entity.h
     )

@@ -18,5 +18,10 @@
   "directory": "/home/jschmold/Projects/game-programming/game-4/src/entities",
   "command": "/usr/bin/c++    -O2 -DNDEBUG   -std=c++17 -o CMakeFiles/entities.dir/world.cpp.o -c /home/jschmold/Projects/game-programming/game-4/src/entities/world.cpp",
   "file": "/home/jschmold/Projects/game-programming/game-4/src/entities/world.cpp"
+},
+{
+  "directory": "/home/jschmold/Projects/game-programming/game-4/src/entities",
+  "command": "/usr/bin/c++    -O2 -DNDEBUG   -std=c++17 -o CMakeFiles/entities.dir/platform.cpp.o -c /home/jschmold/Projects/game-programming/game-4/src/entities/platform.cpp",
+  "file": "/home/jschmold/Projects/game-programming/game-4/src/entities/platform.cpp"
 }
 ]

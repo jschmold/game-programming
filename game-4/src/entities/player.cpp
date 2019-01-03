@@ -39,6 +39,7 @@ Player::Player(
     this->m_visShape->setSize(Vector2f(0.4f, 0.4f));
     this->m_visShape->setFillColor(Color::Green);
     this->m_visShape->setOrigin(0.2f, 0.2f);
+    this->m_visShape->setPosition(startPos);
 
     this->m_view = view;
     this->m_view->setCenter(0.4f, 0.4f);
@@ -49,6 +50,17 @@ void Player::onThink()
     auto pos = this->m_body->GetPosition();
     this->m_visShape->setPosition(pos.x, pos.y);
     this->m_view->setCenter(pos.x, pos.y);
+
+    if (Keyboard::isKeyPressed(Keyboard::A) && !Keyboard::isKeyPressed(Keyboard::LShift))
+        this->move(-this->m_speed * 1.4);
+    else if (Keyboard::isKeyPressed(Keyboard::A))
+        this->move(-this->m_speed);
+
+    if (Keyboard::isKeyPressed(Keyboard::D) && !Keyboard::isKeyPressed(Keyboard::LShift))
+        this->move(this->m_speed * 1.4);
+    else if (Keyboard::isKeyPressed(Keyboard::D))
+        this->move(this->m_speed);
+
 }
 
 void Player::onDraw(RenderTarget* target)
@@ -61,3 +73,17 @@ Player::~Player()
     this->m_world->DestroyBody(this->m_body);
 }
 
+void Player::move(float amt)
+{
+    this->m_body->ApplyForceToCenter(b2Vec2(amt, 0), true);
+}
+
+void Player::jump()
+{
+    this->m_body->ApplyLinearImpulseToCenter(b2Vec2(0.0f, -6.f), true);
+}
+
+void Player::onKeyRelease(Keyboard::Key key)
+{
+    if (key == Keyboard::Space) this->jump();
+}

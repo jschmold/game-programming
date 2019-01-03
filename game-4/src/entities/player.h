@@ -16,6 +16,8 @@ namespace Entities
     protected:
         RectangleShape* m_visShape;
         View*           m_view;
+        float           m_speed = 0.4f;
+        bool            m_canJump = true;
     public:
         Player(
             float       density,
@@ -29,6 +31,13 @@ namespace Entities
         virtual void onThink();
         virtual void onDraw(RenderTarget* target);
         operator Drawable*();
+
+        void jump();
+
+        // negative for left, positive for right
+        void move(float amt);
+
+        void onKeyRelease(Keyboard::Key key);
     };
 
 }

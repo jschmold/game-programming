@@ -2,3 +2,4 @@
 #include "player.h"
 #include "physics-entity.h"
 #include "objective.h"
+#include "platform.h"

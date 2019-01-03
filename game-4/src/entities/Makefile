@@ -152,6 +152,33 @@ objective.cpp.s:
 	cd /home/jschmold/Projects/game-programming/game-4 && $(MAKE) -f src/entities/CMakeFiles/entities.dir/build.make src/entities/CMakeFiles/entities.dir/objective.cpp.s
 .PHONY : objective.cpp.s
 
+platform.o: platform.cpp.o
+
+.PHONY : platform.o
+
+# target to build an object file
+platform.cpp.o:
+	cd /home/jschmold/Projects/game-programming/game-4 && $(MAKE) -f src/entities/CMakeFiles/entities.dir/build.make src/entities/CMakeFiles/entities.dir/platform.cpp.o
+.PHONY : platform.cpp.o
+
+platform.i: platform.cpp.i
+
+.PHONY : platform.i
+
+# target to preprocess a source file
+platform.cpp.i:
+	cd /home/jschmold/Projects/game-programming/game-4 && $(MAKE) -f src/entities/CMakeFiles/entities.dir/build.make src/entities/CMakeFiles/entities.dir/platform.cpp.i
+.PHONY : platform.cpp.i
+
+platform.s: platform.cpp.s
+
+.PHONY : platform.s
+
+# target to generate assembly for a file
+platform.cpp.s:
+	cd /home/jschmold/Projects/game-programming/game-4 && $(MAKE) -f src/entities/CMakeFiles/entities.dir/build.make src/entities/CMakeFiles/entities.dir/platform.cpp.s
+.PHONY : platform.cpp.s
+
 player.o: player.cpp.o
 
 .PHONY : player.o
@@ -218,6 +245,9 @@ help:
 	@echo "... objective.o"
 	@echo "... objective.i"
 	@echo "... objective.s"
+	@echo "... platform.o"
+	@echo "... platform.i"
+	@echo "... platform.s"
 	@echo "... player.o"
 	@echo "... player.i"
 	@echo "... player.s"
